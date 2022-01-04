@@ -6,6 +6,13 @@ img {
   padding: 0;
   box-sizing: border-box;
 }
+/* ------ fjerner det lille logo når skærmen er stor ------ */
+@media (min-width: 860px) {
+  .logo {
+    display: none;
+  }
+}
+/* ------------ MENU ------------- */
 
 ul,
 li {
@@ -22,10 +29,48 @@ li {
   /* text-align: center; */
 }
 
-.navi-list li:not(.logo) {
+.navi-list li:not(.logo_center) {
   flex: 1 0 auto;
   text-align: center;
 }
-/* .logo {
+/* .logo_center {
   width: 50%;
 } */
+
+/* ------------------ BURGER MENU ------------------ */
+.toggle-btn {
+  display: none;
+}
+
+@media (max-width: 860px) {
+  .toggle-btn {
+    background: transparent;
+    border: none;
+    display: block;
+    min-width: 44px;
+    min-height: 44px;
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav.shown {
+    border-top: 1px solid #000;
+    padding-top: 1rem;
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: column;
+  }
+  /* --- fjerner det store logo i midten af menuen --- */
+  .logo_center {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    flex-flow: column;
+  }
+}
