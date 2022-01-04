@@ -1,5 +1,26 @@
 /* -------- FIRST SECTION ----------- */
 #first_index {
-  background-image: url();
+  /* display: grid;
+  grid-column: 1 / 4; */
+  width: 100%;
+  background-image: url(svg/baggrund_2.svg);
   background-size: cover;
 }
+h1 {
+  background-color: var(--color8);
+  font-size: var(--space-xl);
+  margin-top: var(--space-xl);
+  margin-left: var(--space-xl);
+  margin-right: var(--space-xl);
+  text-align: center;
+  color: var(--color6);
+}
+.splashtxt {
+  background-color: var(--color8);
+  margin-left: var(--space-xl);
+  margin-right: var(--space-xl);
+  padding: var(--space-sm);
+  padding-bottom: var(--space-sm);
+  color: var(--color6);
+}
+/* -------- SECOND SECTION ----------- */

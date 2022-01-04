@@ -26,10 +26,10 @@ html {
   --space-xxl: 6rem;
 }
 
-header {
+/* header {
   position: sticky;
   top: 0;
-}
+} */
 h1,
 h2 {
   font-family: synthemesc, sans-serif;
@@ -64,9 +64,6 @@ li {
   flex: 1 0 auto;
   text-align: center;
 }
-/* .logo_center {
-  width: 50%;
-} */
 
 /* ------------------ BURGER MENU ------------------ */
 .toggle-btn {
@@ -74,6 +71,9 @@ li {
 }
 
 @media (max-width: 860px) {
+  header {
+    display: flex;
+  }
   .toggle-btn {
     background: transparent;
     border: none;
@@ -90,7 +90,7 @@ li {
   }
 
   nav.shown {
-    border-top: 1px solid var(--color6);
+    /* border-top: 1px solid var(--color6); */
     padding-top: var(--space-sm);
     display: flex;
     flex: 1 1 100%;
