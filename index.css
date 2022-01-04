@@ -24,3 +24,28 @@ h1 {
   color: var(--color6);
 }
 /* -------- SECOND SECTION ----------- */
+h2 {
+  margin: var(--space-sm);
+  font-size: var(--space-lg);
+}
+#second_index p {
+  margin: var(--space-sm);
+}
+#second_index img {
+  padding: var(--space-xs);
+}
+#second_index .bottom {
+  display: grid;
+  aspect-ratio: 336/83;
+  background-image: url(svg/button.svg);
+  background-size: cover;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  margin: var(--space-xs);
+}
+#second_index .bottom a {
+  grid-column: 2/3;
+  grid-row: 2;
+  font-size: var(--space-md);
+  text-align: center;
+}

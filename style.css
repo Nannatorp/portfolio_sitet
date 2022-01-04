@@ -33,9 +33,11 @@ html {
 h1,
 h2 {
   font-family: synthemesc, sans-serif;
+  color: var(--color6);
 }
 p {
   font-family: degular, sans-serif;
+  color: var(--color6);
 }
 a {
   font-family: degular, sans-serif;
