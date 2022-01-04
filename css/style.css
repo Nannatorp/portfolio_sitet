@@ -19,7 +19,13 @@ li {
   flex-wrap: wrap;
   width: 100%;
   padding: 1rem;
+  /* text-align: center; */
 }
-.logo {
-  width: 10%;
+
+.navi-list li:not(.logo) {
+  flex: 1 0 auto;
+  text-align: center;
 }
+/* .logo {
+  width: 50%;
+} */
