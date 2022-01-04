@@ -37,6 +37,14 @@ h2 {
 p {
   font-family: degular, sans-serif;
 }
+a {
+  font-family: degular, sans-serif;
+  text-decoration: none;
+  color: var(--color6);
+}
+a:hover {
+  color: var(--color5);
+}
 
 /* ------ fjerner det lille logo når skærmen er stor ------ */
 @media (min-width: 860px) {
@@ -83,6 +91,7 @@ li {
     font-size: var(--space-sm);
     cursor: pointer;
     font-family: degular, sans-serif;
+    color: var(--color6);
   }
 
   nav {
