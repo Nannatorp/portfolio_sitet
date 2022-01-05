@@ -26,15 +26,19 @@ html {
   --space-xxl: 6rem;
 }
 
-/* header {
-  position: sticky;
-  top: 0;
-} */
+@media (min-width: 860px) {
+  header {
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.8);
+  }
+}
 h1,
 h2 {
   font-family: synthemesc, sans-serif;
   color: var(--color6);
 }
+h3,
 p {
   font-family: degular, sans-serif;
   color: var(--color6);
@@ -64,7 +68,7 @@ footer {
   border-top-right-radius: 25px;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
-  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 .col_2 {
   grid-column: 3/4;
@@ -75,7 +79,7 @@ footer {
   border-top-right-radius: 25px;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
-  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
 /* ------ fjerner det lille logo når skærmen er stor ------ */
