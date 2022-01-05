@@ -26,7 +26,10 @@
   #hjerte_baggrund {
     display: none;
   }
-  .col_narrow img {
+  .col_narrow_1 img {
+    display: none;
+  }
+  .col_narrow_2 img {
     display: none;
   }
 }
@@ -71,23 +74,15 @@ h2 {
 #fourth_index .section_wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
 }
 .svg_element {
   grid-column: 2/4;
-  place-content: center;
 }
 .txt_element {
   grid-column: 1/4;
-  grid-row: 2;
   text-align: center;
+  margin-bottom: var(--space-md);
 }
-
-
-
-
-
-
 
 @media (min-width: 860px) {
   /* -------- gør man ikke kan se mobil version poster i stor skærm -------- */
@@ -106,14 +101,21 @@ h2 {
   }
   #first_index .section_wrapper {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(5, 0.45fr);
   }
   h1 {
-    font-size: var(--space-xl);
+    font-size: 2.5rem;
+    text-align: center;
+    grid-column: 7/9;
+    grid-row: 2;
+    margin-top: 1rem;
   }
   .splashtxt {
-    font-size: var(--space-sm);
+    font-size: 1.2rem;
+    grid-column: 7/9;
+    grid-row: 3;
+    margin: -1.2rem;
   }
   /* -------- SECOND SECTION ----------- */
   #second_index {
@@ -121,9 +123,10 @@ h2 {
     background-size: cover;
     background-position: 50%;
   }
-  #second_index .section_wrapper{
+  #second_index .section_wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    padding-top: 25px;
   }
   #second_index h2 {
     background-color: var(--color8);
@@ -138,13 +141,44 @@ h2 {
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
     margin-top: 0;
+    padding: var(--space-sm);
   }
-
-
-
-
-
-
+  /* -------- THIRD SECTION ----------- */
+  #third_index .section_wrapper {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+    margin-top: var(--space-sm);
+  }
+  .col_narrow_1 {
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: 50px;
+    margin-top: 70px;
+  }
+  .col_narrow_2 {
+    grid-column: 4;
+    margin-right: 50px;
+    margin-top: 450px;
+  }
+  /* -------- FOURTH SECTION ----------- */
+  #fourth_index .section_wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+  }
+  .svg_element {
+    grid-column: 2/3;
+    grid-row: 1;
+    margin-bottom: 30px;
+  }
+  .txt_element {
+    grid-column: 2/3;
+    grid-row: 1;
+    text-align: center;
+    margin-top: 30px;
+    font-size: var(--space-md);
+  }
+}
 
 @media (min-width: 1064px) {
   /* -------- FIRST SECTION ----------- */
