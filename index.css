@@ -82,6 +82,13 @@ h2 {
   grid-row: 2;
   text-align: center;
 }
+
+
+
+
+
+
+
 @media (min-width: 860px) {
   /* -------- gør man ikke kan se mobil version poster i stor skærm -------- */
   #mobil_poster {
@@ -109,10 +116,36 @@ h2 {
     font-size: var(--space-sm);
   }
   /* -------- SECOND SECTION ----------- */
+  #second_index {
+    background-image: url(svg/baggrund_1.svg);
+    background-size: cover;
+    background-position: 50%;
+  }
   #second_index .section_wrapper{
     display: grid;
-      grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
+  #second_index h2 {
+    background-color: var(--color8);
+    padding: var(--space-xs);
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    margin-bottom: 0;
+  }
+  #second_index p {
+    background-color: var(--color8);
+    padding: var(--space-xs);
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    margin-top: 0;
+  }
+
+
+
+
+
+
+
 @media (min-width: 1064px) {
   /* -------- FIRST SECTION ----------- */
 
