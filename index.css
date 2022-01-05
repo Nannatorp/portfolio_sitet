@@ -1,28 +1,34 @@
 /* -------- FIRST SECTION ----------- */
-#first_index {
-  /* display: grid;
-  grid-column: 1 / 4; */
-  width: 100%;
-  background-image: url(svg/baggrund_2.svg);
-  background-size: cover;
+
+@media (max-width: 860px) {
+  #first_index {
+    width: 100%;
+    background-image: url(svg/baggrund_2.svg);
+    background-size: cover;
+  }
+  h1 {
+    background-color: var(--color8);
+    font-size: var(--space-xl);
+    margin-top: var(--space-xl);
+    margin-left: var(--space-xl);
+    margin-right: var(--space-xl);
+    text-align: center;
+    color: var(--color6);
+  }
+  .splashtxt {
+    background-color: var(--color8);
+    margin-left: var(--space-xl);
+    margin-right: var(--space-xl);
+    padding: var(--space-sm);
+    padding-bottom: var(--space-sm);
+    color: var(--color6);
+  }
+  /* ------ fjerner blomsterne i third_index mobil version ------- */
+  .col_narrow img {
+    display: none;
+  }
 }
-h1 {
-  background-color: var(--color8);
-  font-size: var(--space-xl);
-  margin-top: var(--space-xl);
-  margin-left: var(--space-xl);
-  margin-right: var(--space-xl);
-  text-align: center;
-  color: var(--color6);
-}
-.splashtxt {
-  background-color: var(--color8);
-  margin-left: var(--space-xl);
-  margin-right: var(--space-xl);
-  padding: var(--space-sm);
-  padding-bottom: var(--space-sm);
-  color: var(--color6);
-}
+
 /* -------- SECOND + THIRD SECTION ----------- */
 h2 {
   margin: var(--space-sm);
@@ -55,12 +61,7 @@ h2 {
   font-size: var(--space-md);
   text-align: center;
 }
-/* ------ fjerner blomsterne i mobil version ------- */
-@media (max-width: 860px) {
-  .col_narrow img {
-    display: none;
-  }
-}
+
 /* -------- FOURTH SECTION ----------- */
 #fourth_index a {
   margin: var(--space-sm);
@@ -78,4 +79,10 @@ h2 {
   grid-column: 1/4;
   grid-row: 2;
   text-align: center;
+}
+@media (min-width: 860px) {
+  /* -------- gør man ikke kan se mobil version poster i stor skærm -------- */
+  #mobil_poster {
+    display: none;
+  }
 }
