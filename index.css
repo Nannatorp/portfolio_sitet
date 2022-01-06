@@ -157,7 +157,7 @@ h2 {
   }
   .col_narrow_2 {
     grid-column: 4;
-    margin-right: 50px;
+    margin-left: 50px;
     margin-top: 450px;
   }
   /* -------- TILBAGE KNAP ----------- */
