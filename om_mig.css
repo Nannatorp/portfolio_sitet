@@ -1,5 +1,5 @@
 h2 {
-  font-size: var(--space-lg);
+  font-size: var(--space-xl);
 }
 h3 {
   font-size: 1.2rem;
@@ -39,6 +39,13 @@ h3 {
 }
 @media (min-width: 860px) {
   /* ------ FIRST SECTION ------- */
+  h3 {
+    font-size: var(--space-md);
+  }
+  #first_ommig p {
+    font-size: var(--space-md);
+  }
+
   #first_ommig .section_wrapper {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -53,7 +60,6 @@ h3 {
   }
   #second_ommig .section_wrapper {
     display: grid;
-    grid-column: 1 / 4;
     width: 100%;
     background-image: url(svg/baggrund_1.svg);
     background-size: cover;
