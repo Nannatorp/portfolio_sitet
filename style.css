@@ -56,8 +56,8 @@ footer {
   background-image: url(svg/baggrund_2.svg);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  /* padding: var(--space-sm); */
   gap: 10px;
+  font-size: 0.8rem;
 }
 .col_1 {
   grid-column: 2/3;
