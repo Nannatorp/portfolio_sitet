@@ -38,34 +38,139 @@
     <main>
       <section id="first_tema_fire">
         <div class="section_wrapper">
-          <h2></h2>
-          <div class="col_narrow"></div>
-          <div class="col_wide"></div>
+          <h2>Tema 4 – Grundlæggende animation</h2>
+          <div class="col_narrow">
+            <p>
+              På dette forløb var formålet at lave et spil. Vores spil skulle
+              have et koncept og en ide, som vi selv fandt frem til og vi skulle
+              selv designe og kode spillet helt fra bunden. Vi lærte at bruge
+              Adobe Illustrator til at designe vector grafik, til brug som
+              grafiske elementer i vores spil. Vi blev også introduceret til
+              JavaScript, animations-styling i CSS, og Adobe Audition.
+            </p>
+          </div>
+          <div class="col_wide">
+            <img src="img/spilskærm_home.webp" alt="" />
+          </div>
         </div>
       </section>
       <section id="second_tema_fire">
         <div class="section_wrapper">
-          <div class="col_narrow"></div>
+          <div class="col_narrow">
+            <h3>Ide og designdokumentation</h3>
+            <p>
+              Mit spilkoncept er et Halloween spil hvor du skal samle slik og
+              undgå frugter. Elementerne falder ned fra toppen og du får +points
+              for at trykke på slik, og – points hvis slikket når bunden.
+              Trykker du på et stykke frugt mister du et liv. Du har 30 sek til
+              at samle 15 point og vinde spillet. Samles der under 15 points
+              eller alle liv er tabt, har du tabt spillet.
+            </p>
+            <p>
+              Min stil inspiration kommer fra den japanske stil Kawaii. De gør
+              brug af Baby bias med store pander, store hoveder og store øjne,
+              som gør karaktererne i denne stilart meget nuttede. Til
+              formgivning af mine figurer har taget udgangspunkt i Bouba, som
+              har runde og bløde former og ser sød ud. Det er gennemgående i
+              hele spillet, og kan ses i mine screendumps fra spillet. I Adobe
+              Illustrator brugte jeg cirkler eller firkanter og trekanter med
+              afrundede hjørner til at designe mine grafiske elementer. Jeg
+              brugte også meget direct selection tool til at ændre på formen og
+              gøre det mindre symmetrisk.
+            </p>
+            <p>
+              Jeg har i dette tema også udarbejdet et aktivitetsdiagram og et
+              state machine diagram. Aktivitetsdiagrammet har jeg brugt til at
+              beskrive hvordan spillets handling skal forgå i en bestemt
+              rækkefølge. State machine diagrammet minder om
+              aktivitetsdiagrammet, men er mere detaljeret, og kan bruges som en
+              oversigt over spillets funktioner, set fra JavaScripts perspektiv.
+              State machine diagrammet hjalp mig utrolig meget med at holde
+              overblik over alle funktionerne i mit spil og hvordan de skulle
+              forbindes, da jeg skulle kode mit spil.
+            </p>
+          </div>
           <div class="col_wide">
-            <div class="image_1"></div>
-            <div class="image_2"></div>
-            <div class="image_3"></div>
-            <div class="image_4"></div>
-            <div class="image_5"></div>
-            <div class="image_6"></div>
+            <div class="image_1">
+              <img src="img/aktivitetsdiagram.webp" alt=" aktivitetsdiagram" />
+            </div>
+            <div class="image_2">
+              <img src="img/state_machine.webp" alt="state machine diagram" />
+            </div>
+            <div class="image_3">
+              <img src="img/design1.webp" alt="billde af design 1" />
+            </div>
+            <div class="image_4">
+              <img src="img/design2.webp" alt="billde af design 2" />
+            </div>
+            <div class="image_5">
+              <img src="img/design3.webp" alt="billde af design 3" />
+            </div>
+            <div class="image_6">
+              <img src="img/design4.webp" alt="billde af design 4" />
+            </div>
           </div>
         </div>
       </section>
       <section id="third_tema_fire">
         <div class="section_wrapper">
-          <div class="col"></div>
-          <div class="col"></div>
+          <div class="col">
+            <h3>Assets liste</h3>
+            <p>
+              Min assets liste består af de elementer jeg har lavet i Adobe
+              Illustrator. Jeg har lavet 2 hoved karakterer, græskar og
+              spøgelse, som skal samle slik. Mine gode elementer er 3 stykker
+              slik, designet med lyse farver og bløde former. Mine onde
+              elementer er 3 stykker frugt, i mørke farver, stadig med bløde
+              former men deres udtryk er mere skarpt, hvilket giver dem det onde
+              look. Mine baggrunde har jeg givet noget dybde via bakkerne og en
+              L komposition, via huset. Andre elementer på min assets liste er
+              skelethoveder som energi, et stykke slik som points, play knap og
+              en bar hvor tiden løber ud.
+            </p>
+          </div>
+          <div class="col">
+            <img src="img/assetliste.webp" alt="billede af assets liste" />
+          </div>
         </div>
       </section>
       <section id="fourth_tema_fire">
         <div class="section_wrapper">
-          <div class="col"></div>
-          <div class="col"></div>
+          <div class="col">
+            <h3>Spillet</h3>
+            <p>
+              For at kunne gøre vores spil interaktivt, skulle vi benytte os af
+              JavaScript. JavaScript er et programmeringssprog ligesom HTML og
+              CSS. Ved at animere et spil var det en sjov måde at lære ny viden
+              på, som vi senere kan overføre til andre interaktive
+              brugergrænseflader.
+            </p>
+            <p>
+              JavaScript bruger man til at manipulere med DOM’en. I dette tema
+              lærte vi f.eks. at bruge Selectorer, som er det vi bruger til at
+              tage fat i det element vi gerne vil gøre noget ved. Det kan f.eks.
+              være efterfulgt af en .addEventListener hvor man kan tilføje
+              ”click” og så reagerer elementet når du klikker på det. Du kan
+              ikke validere JavaScript på samme måde som henholdsvis HTML og
+              CSS, derfor er det vigtigt at man tilføjer console.log til sine
+              funktioner. For at tjekke om man har fejl, kan man så inspicere i
+              developer tools hvor man så kan se sin console.log og om det
+              fungerer.
+            </p>
+            <p>
+              Link til mit færdige spil:
+              <br />
+              <a href="https://nannatorp.dk/kea/04_animation/spil/spil.html"
+                >04.05.03 Temaopgave – Trick or Treat</a
+              >
+            </p>
+          </div>
+          <div class="col">
+            <img
+              src="svg/baggrund_med_ting.svg"
+              alt="spillets baggrund med ting"
+            />
+          </div>
         </div>
       </section>
       <section id="tilbage_knap">
