@@ -22,10 +22,7 @@
     padding-bottom: var(--space-sm);
     color: var(--color6);
   }
-  /* ------ fjerner hjerte baggrund i second_index og blomsterne i third_index mobil version ------- */
-  #hjerte_baggrund {
-    display: none;
-  }
+  /* ------ fjerner blomsterne i third_index mobil version ------- */
   .col_narrow_1 img {
     display: none;
   }
@@ -65,23 +62,6 @@ h2 {
   grid-row: 2;
   font-size: var(--space-md);
   text-align: center;
-}
-
-/* -------- TILBAGE KNAP ----------- */
-#tilbage_knap a {
-  margin: var(--space-sm);
-}
-#tilbage_knap .section_wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-.svg_element {
-  grid-column: 2/4;
-}
-.txt_element {
-  grid-column: 1/4;
-  text-align: center;
-  margin-bottom: var(--space-md);
 }
 
 @media (min-width: 860px) {
@@ -159,24 +139,6 @@ h2 {
     grid-column: 4;
     margin-left: 50px;
     margin-top: 450px;
-  }
-  /* -------- TILBAGE KNAP ----------- */
-  #tilbage_knap .section_wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-top: 30px;
-  }
-  .svg_element {
-    grid-column: 2/3;
-    grid-row: 1;
-    margin-bottom: 30px;
-  }
-  .txt_element {
-    grid-column: 2/3;
-    grid-row: 1;
-    text-align: center;
-    margin-top: 30px;
-    font-size: var(--space-md);
   }
 }
 

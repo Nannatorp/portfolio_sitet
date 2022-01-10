@@ -9,22 +9,6 @@ h3,
 p {
   margin-bottom: var(--space-sm);
 }
-/* -------- TILBAGE KNAP ----------- */
-#tilbage_knap a {
-  margin: var(--space-sm);
-}
-#tilbage_knap .section_wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-.svg_element {
-  grid-column: 2/4;
-}
-.txt_element {
-  grid-column: 1/4;
-  text-align: center;
-  margin-bottom: var(--space-md);
-}
 @media (max-width: 860px) {
   .section_wrapper {
     margin: var(--space-sm);
@@ -140,24 +124,6 @@ p {
     margin: var(--space-xl) 0 var(--space-xl) var(--space-xl);
   }
   #fourth_tema_to a {
-    font-size: var(--space-md);
-  }
-  /* -------- TILBAGE KNAP ----------- */
-  #tilbage_knap .section_wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-top: 30px;
-  }
-  .svg_element {
-    grid-column: 2/3;
-    grid-row: 1;
-    margin-bottom: 30px;
-  }
-  .txt_element {
-    grid-column: 2/3;
-    grid-row: 1;
-    text-align: center;
-    margin-top: 30px;
     font-size: var(--space-md);
   }
 }

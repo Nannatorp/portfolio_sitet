@@ -30,14 +30,23 @@ html {
   --space-xl: 3rem;
   --space-xxl: 6rem;
 }
-
-@media (min-width: 860px) {
-  header {
-    position: sticky;
-    top: 0;
-    background: rgba(255, 255, 255, 0.8);
-  }
+/* -------- TILBAGE KNAP ----------- */
+#tilbage_knap a {
+  margin: var(--space-sm);
 }
+#tilbage_knap .section_wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.svg_element {
+  grid-column: 2/4;
+}
+.txt_element {
+  grid-column: 1/4;
+  text-align: center;
+  margin-bottom: var(--space-md);
+}
+/* ------------------------------------ */
 h1,
 h2 {
   font-family: synthemesc, sans-serif;
@@ -87,10 +96,33 @@ footer {
   border-bottom-right-radius: 25px;
 }
 
-/* ------ fjerner det lille logo når skærmen er stor ------ */
 @media (min-width: 860px) {
+  header {
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  /* ------ fjerner det lille logo når skærmen er stor ------ */
   .logo {
     display: none;
+  }
+  /* -------- TILBAGE KNAP stor skærm ----------- */
+  #tilbage_knap .section_wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+  }
+  .svg_element {
+    grid-column: 2/3;
+    grid-row: 1;
+    margin-bottom: 30px;
+  }
+  .txt_element {
+    grid-column: 2/3;
+    grid-row: 1;
+    text-align: center;
+    margin-top: 30px;
+    font-size: var(--space-md);
   }
 }
 /* ------------ MENU ------------- */
@@ -140,7 +172,6 @@ li {
   }
 
   nav.shown {
-    /* border-top: 1px solid var(--color6); */
     padding-top: var(--space-sm);
     display: flex;
     flex: 1 1 100%;
