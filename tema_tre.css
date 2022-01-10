@@ -9,6 +9,7 @@ h3,
 p {
   margin-bottom: var(--space-sm);
 }
+
 @media (max-width: 860px) {
   .section_wrapper {
     margin: var(--space-sm);
@@ -133,6 +134,9 @@ p {
   #third_tema_tre .image_7 {
     grid-column: 1/2;
     grid-row: 3;
+  }
+  #third_tema_tre a {
+    font-size: var(--space-md);
   }
   /* -------- FOURTH SECTION ----------- */
   #fourth_tema_tre .section_wrapper {

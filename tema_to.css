@@ -59,9 +59,11 @@ p {
     grid-column: 1/2;
     grid-row: 1/2;
     margin: var(--space-xl) 0 0 var(--space-xl);
+    padding-top: var(--space-md);
   }
   .element_2 {
     margin: 0 0 0 var(--space-xl);
+    padding-bottom: var(--space-md);
   }
   .element_3 {
     grid-row: 1/3;
@@ -96,6 +98,7 @@ p {
   }
   #third_tema_to .col_narrow {
     margin: var(--space-xl) var(--space-xl) var(--space-xl) 0;
+    padding-top: var(--space-md);
   }
 
   /* -------- FOURTH SECTION ----------- */
@@ -122,6 +125,7 @@ p {
     grid-column: 1/2;
     grid-row: 1;
     margin: var(--space-xl) 0 var(--space-xl) var(--space-xl);
+    padding-top: var(--space-md);
   }
   #fourth_tema_to a {
     font-size: var(--space-md);
