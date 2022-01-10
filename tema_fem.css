@@ -97,7 +97,7 @@ p {
   }
   #third_tema_fem .col_narrow_2 {
     background-color: var(--color8);
-    margin: var(--space-xl);
+    margin: var(--space-sm) var(--space-xl) var(--space-xl) var(--space-xl);
     padding: var(--space-md);
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
@@ -110,7 +110,20 @@ p {
   #third_tema_fem .col_wide_2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 0 var(--space-xl) 0 var(--space-xl);
+    margin: 0 var(--space-xl) var(--space-xl) var(--space-xl);
     gap: 10px;
+  }
+
+  #third_tema_fem .image_6 {
+    grid-row: 3;
+    grid-column: 2/3;
+    place-self: start;
+    padding: 0rem var(--space-lg) var(--space-lg) var(--space-lg);
+  }
+  #third_tema_fem .image_7 {
+    grid-row: 3;
+    grid-column: 2/3;
+    place-self: end;
+    padding: var(--space-lg) var(--space-lg) 0rem var(--space-lg);
   }
 }

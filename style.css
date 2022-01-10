@@ -65,6 +65,13 @@ a {
 a:hover {
   color: var(--color5);
 }
+figcaption {
+  font-family: degular, sans-serif;
+  text-decoration: none;
+  color: var(--color6);
+  text-align: center;
+  /* background-color: var(--color3); */
+}
 
 footer {
   background-image: url(svg/baggrund_2.svg);
