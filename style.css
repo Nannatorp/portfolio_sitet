@@ -1,6 +1,11 @@
 img {
   max-width: 100%;
 }
+iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
 * {
   margin: 0;
   padding: 0;
